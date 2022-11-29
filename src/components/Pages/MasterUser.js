@@ -25,7 +25,7 @@ const MasterUser = () => {
 
   useEffect(() => {
     fetchData();
-  }, [fetchData]);
+  }, []);
 
   // console.log(mainData);
 

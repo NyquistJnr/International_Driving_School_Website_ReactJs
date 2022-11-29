@@ -47,11 +47,38 @@ const SignUp = () => {
     });
   };
 
+  /*     const sendSignUpDetails = async () => {
+      const response = await fetch(
+        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyBxUoC13qf9lgyTiEonnHon-xyaIdELXgk123",
+        {
+          method: "POST",
+          body: JSON.stringify(completeSignUpData),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      if (!response.ok) {
+        throw new Error("An Error Occurred!");
+      }
+      const data = await response.json();
+      console.log(data);
+    };
+  };
+
+  useEffect(() => {
+    sendSignUpDetails();
+  }); */
+
   return (
     <Container fluid className={`text-center ${classes.body}`}>
       <main className={classes["form-signin"]}>
-        {error && <p>{error}</p>}
         <form onSubmit={submitHandler}>
+          {error && (
+            <div className="alert alert-danger" role="alert">
+              <p>{error}</p>
+            </div>
+          )}
           <img
             className="mb-4"
             src={require("../../assets/team-1.jpg")}
@@ -60,7 +87,6 @@ const SignUp = () => {
             height="57"
           />
           <h1 className="h3 mb-3 fw-normal">Please sign up</h1>
-
           <div className="form-floating">
             <input
               type="email"
@@ -81,7 +107,6 @@ const SignUp = () => {
             />
             <label htmlFor="floatingPassword">Password</label>
           </div>
-
           <div className="checkbox mb-3">
             <label>
               <input type="checkbox" value="remember-me" /> Remember me

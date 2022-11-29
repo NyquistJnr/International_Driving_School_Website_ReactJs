@@ -7,7 +7,7 @@ const SliderHeader = () => {
     <Carousel className={classes.size}>
       <Carousel.Item>
         <img
-          className={`d-block w-100`}
+          className={`d-block w-100 img-fluid`}
           src={require("../../assets/carousel-1.jpg")}
           alt="First slide"
         />
@@ -18,7 +18,7 @@ const SliderHeader = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 img-fluid"
           src={require("../../assets/carousel-2.jpg")}
           alt="Second slide"
         />

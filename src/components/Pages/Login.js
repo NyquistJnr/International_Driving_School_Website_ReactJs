@@ -51,8 +51,12 @@ const Login = () => {
   return (
     <Container fluid className={`text-center ${classes.body}`}>
       <main className={classes["form-signin"]}>
-        {error && <p>{error}</p>}
         <form onSubmit={submitHandler}>
+          {error && (
+            <div className="alert alert-danger" role="alert">
+              <p>{error}</p>
+            </div>
+          )}
           <img
             className="mb-4"
             src={require("../../assets/team-1.jpg")}
