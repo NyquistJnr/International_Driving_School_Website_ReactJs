@@ -1,0 +1,38 @@
+.page-header{
+    padding-top: 200px;
+    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(../../assets/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.centertext{
+    margin-top: -150px;
+}
+
+
+
+.control {
+    margin: 1rem 0;
+}
+
+.control label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.control input,
+.control textarea {
+    display: block;
+    width: 100%;
+    font: inherit;
+    padding: 0.2rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+.control input:focus,
+.control textarea:focus {
+    outline: none;
+    border-color: #230052;
+}
