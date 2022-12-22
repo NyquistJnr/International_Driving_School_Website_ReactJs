@@ -32,6 +32,7 @@ const App = () => {
 
   return (
     <Suspense fallback={spinner}>
+      Hello
       <Header />
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
