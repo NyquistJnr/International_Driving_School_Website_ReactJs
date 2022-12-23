@@ -27,7 +27,7 @@ const Login = () => {
     };
 
     fetch(
-      "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBxUoC13qf9lgyTiEonnHon-xyaIdELXgk",
+      "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=[APIKEY]",
       {
         method: "POST",
         body: JSON.stringify(completeSignUpData),
